@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Prueba de desarrollo</title>
+    <link href="css/estilos.css" rel="stylesheet"/>
+</head>
+<body onload="mostrarPersonas()">
+    <div class='contenedor' id='cabecero'>
+        <h1>Prueba de desarrollo</h1>
+    </div>
+
+    <div class='contenedor2'>
+        <div class='tabla' style="text-align: center;">Datos insertados</div>
+        <div class='elemento'>
+            <ul style="list-style-type: decimal;" id='personas'>
+                <!--<li>Santiago Mora</li>-->
+            </ul>
+        </div>
+    </div>
+
+    <div class="contenedor1">
+        <form id='forma' method="post" action="APPFormulario/index.js">
+            <select id="tipodocumento" name="tipodocumento">
+                <option value="CC">CEDULA DE CIUDADANIA</option>
+                <option value="CE">CEDULA EXTRANJERIA</option>
+                <option value="TI">TARJETA DE IDENTIFICACION</option>
+                <option value="RC">REGISTRO CIVIL</option>
+                <option value="PT">PASAPORTE</option>
+                <option value="NIT">NIT</option>
+            </select>
+            <input type="text" id="documento" placeholder="Documento"/>
+            <input type="text" id="nombre" placeholder="Nombres"/>
+            <input type="text" id="apellido" placeholder="Apellidos"/>
+            <select id="pais" name="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="México">México</option>
+                <option value="Uruguay">Uruguay</option>
+            </select>
+            <input type="text" id="ciudad" placeholder="Ciudad"/>
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" placeholder="Si necesitas agregar mas direcciones separalo por un punto y coma"/>
+        </form>
+        <div style='text-align: center;'>
+            <button style='cursor: pointer' onclick="agrgarPersona()">+</button>
+        </div>
+    </div>
+    
+    <script src='js/persona.js'></script>
+    <script src='js/app.js'></script>
+</body>
+</html>

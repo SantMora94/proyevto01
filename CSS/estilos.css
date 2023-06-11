@@ -1,0 +1,134 @@
+html {
+    background-color: #2196f3;
+    min-height: 1000px;
+    font-family: "helvetica neue";
+    background: url(fondo.png), #2196f3;
+    background: url(fondo.png),
+      -webkit-gradient(linear, right top, left top, from(#2196f3), to(#009688));
+    background: url(fondo.png),
+      linear-gradient(to left, #2196f3, #009688);
+  }
+  
+  h1 {
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .contenedor {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  .contenedor1 {
+    max-width: 1350px;
+    margin: 60px auto;
+    background: white;
+    border-radius: 80px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  .contenedor2 {
+    max-width: 800px;
+    margin: 60px auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  .tabla {
+    text-align: center;
+  }
+  
+  #cabecero {
+    background-color: #3f51b5;
+    text-align: center;
+  }
+  
+  .elemento {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .elemento:last-child {
+    border-bottom: 0;
+  }
+  
+  input[type="checkbox"] {
+    margin: 20px;
+  }
+  
+  p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #00204a;
+  }
+  
+  form {
+    text-align: center;
+    margin-left: 10px;
+  }
+  
+  button {
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #3f51b5;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-width: 0;
+  }
+
+  select {
+    border: none;
+    background: transparent;
+    font-weight: 100;
+  }
+  
+  input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-weight: 100;
+    width: 18%;
+  }
+
+  input[id="direccion"]{
+    text-align: center;
+    height: 60px;
+    top: 8px;
+    border: none;
+    background: transparent;
+    font-weight: 100;
+    width: 40%;
+  }
+
+  label{
+  text-align: center;
+  height: 60px;
+  top: 8px;
+  border: none;
+  background: transparent;
+  font-weight: 100;
+  width: 40%;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #3f51b5;
+  }
+  
+  ::placeholder {
+    color: grey;
+    opacity: 1;
+  }
